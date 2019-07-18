@@ -5,7 +5,7 @@
 ```bash
 locust -f switch_graph_types_test.py --host=https://arendus.juhtimislauad.stat.ee/api --no-web -c 300 -r 10 --run-time 5m
 ```
-Paremeters:
+Parameters:
 - *-c* - number of concurrent threads
 - *-r* - hatch rate or how many users to spawn per second
 - *--run-time* - for how long to run tests
