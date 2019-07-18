@@ -1,3 +1,4 @@
+import random
 from locust import HttpLocust, TaskSet, task
 
 class UserBehavior(TaskSet):
@@ -26,5 +27,4 @@ class UserBehavior(TaskSet):
 
 class WebsiteUser(HttpLocust):
     task_set = UserBehavior
-    min_wait = 800
-    max_wait = 1200
+    wait_function = lambda self: random.expovariate(1)*1000
