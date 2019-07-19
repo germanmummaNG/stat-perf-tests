@@ -1,1 +1,3 @@
-__pycache__/
+.idea/
+stat-perf-tests.iml
+venv/
